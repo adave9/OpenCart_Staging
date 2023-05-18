@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 46.305 s <<< FAILURE! - in TestSuite
+logoTest(test.HomePageTest)  Time elapsed: 0.02 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "page.HomePage.homepage_logo()" because "this.hp" is null
+	at test.HomePageTest.logoTest(HomePageTest.java:36)
+
+titleTest(test.HomePageTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "page.HomePage.homepage_title()" because "this.hp" is null
+	at test.HomePageTest.titleTest(HomePageTest.java:29)
+
+afterClass(test.HomePageTest)  Time elapsed: 0.095 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [5d087f75-3ad2-4463-86a0-37b9a854e147, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0, moz:accessibilityChecks: false, moz:buildID: 20230504192738, moz:debuggerAddress: 127.0.0.1:37143, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 1892, moz:profile: C:\Users\ankur\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37143/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5d087f75-3ad2-4463-86a0-37b9a854e147
+
