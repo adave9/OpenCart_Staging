@@ -1,11 +1,11 @@
 package test;
 
 import java.io.IOException;
-
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 import base.BaseClass;
+
 
 public class BrowserTest extends BaseClass{
 
@@ -19,8 +19,8 @@ public class BrowserTest extends BaseClass{
 		  initialization();
 	  }
 
-	  @AfterMethod
-	  public void afterClass() {
-		  driver.close();
+	  @AfterTest
+	  public void tearDown() {
+		  driver.quit();
 	  }
 }

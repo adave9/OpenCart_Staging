@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-failed">Surefire suite</span>
+              <span class="suite-name border-passed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,26 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 2 failed,   5 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Surefire_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="test.HomePageTest" class="method navigator-link" hash-for-method="logoTest">logoTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="test.HomePageTest" class="method navigator-link" hash-for-method="titleTest">titleTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                    <span class="method-stats">7 methods,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -145,6 +126,16 @@
                         <a href="#" panel-name="suite-Surefire_suite" title="test.BrowserTest" class="method navigator-link" hash-for-method="browserLaunchTest">browserLaunchTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.HomePageTest" class="method navigator-link" hash-for-method="logoTest">logoTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="test.HomePageTest" class="method navigator-link" hash-for-method="titleTest">titleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
                   </li>
                 </ul>
@@ -157,9 +148,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-failed">
+          <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">test.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -168,11 +159,6 @@
                   <a name="logoTest">
                   </a> <!-- logoTest -->
                   <span class="method-name">logoTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;page.HomePage.homepage_logo()&quot; because &quot;this.hp&quot; is null
-	at test.HomePageTest.logoTest(HomePageTest.java:36)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -180,15 +166,10 @@
                   <a name="titleTest">
                   </a> <!-- titleTest -->
                   <span class="method-name">titleTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;page.HomePage.homepage_title()&quot; because &quot;this.hp&quot; is null
-	at test.HomePageTest.titleTest(HomePageTest.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -288,36 +269,36 @@ data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'browserLaunchTest')
 data.setCell(0, 2, 'test.BrowserTest')
-data.setCell(0, 3, 9908);
+data.setCell(0, 3, 7851);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'browserLaunchTest')
 data.setCell(1, 2, 'test.BrowserTest')
-data.setCell(1, 3, 7334);
+data.setCell(1, 3, 7211);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'browserLaunchTest')
 data.setCell(2, 2, 'test.BrowserTest')
-data.setCell(2, 3, 6951);
+data.setCell(2, 3, 6914);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'browserLaunchTest')
 data.setCell(3, 2, 'test.BrowserTest')
-data.setCell(3, 3, 6945);
+data.setCell(3, 3, 6859);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'browserLaunchTest')
 data.setCell(4, 2, 'test.BrowserTest')
-data.setCell(4, 3, 6655);
+data.setCell(4, 3, 6850);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'logoTest')
 data.setCell(5, 2, 'test.HomePageTest')
-data.setCell(5, 3, 2);
+data.setCell(5, 3, 121);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'titleTest')
 data.setCell(6, 2, 'test.HomePageTest')
-data.setCell(6, 3, 1);
+data.setCell(6, 3, 23);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <span class="suite-total-time">Total running time: 35 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -348,66 +329,46 @@ return data;
                 <span class="method-name">browserLaunchTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">9915 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">browserLaunchTest</span>
-                <span class="method-start">11728 ms</span>
+                <span class="method-start">6921 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">18385 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">browserLaunchTest</span>
-                <span class="method-start">19797 ms</span>
+                <span class="method-start">13783 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">26749 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">browserLaunchTest</span>
-                <span class="method-start">28129 ms</span>
+                <span class="method-start">20996 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">35076 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">browserLaunchTest</span>
-                <span class="method-start">36354 ms</span>
+                <span class="method-start">27848 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">43689 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.HomePageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">45057 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">logoTest</span>
-                <span class="method-start">45058 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">titleTest</span>
-                <span class="method-start">45078 ms</span>
+                <span class="method-start">35707 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">logoTest</span>
+                <span class="method-start">35732 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.BrowserTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">afterClass</span>
-                <span class="method-start">45081 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">35854 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">37795 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

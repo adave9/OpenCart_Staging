@@ -16,7 +16,7 @@ public class BaseClass {
 	
 	public static WebDriver driver;
 	public static Properties prop;
-	public SoftAssert soft_assert;
+	public SoftAssert soft_assert = new SoftAssert();
 	
 	public BaseClass() throws IOException {
 		FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/config/config.properties");

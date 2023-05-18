@@ -16,6 +16,7 @@ public class HomePage extends BaseClass{
 	public HomePage() throws IOException {
 		initialization();
 		PageFactory.initElements(driver, this);
+		
 	}
 	
 	public String homepage_title(){
